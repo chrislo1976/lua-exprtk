@@ -2,7 +2,7 @@
 package = "lua-exprtk"
 version = "scm-1"
 source = {
-  url = "https://github.com/chrislo1976/lua-exprtk.git",
+  url = "git://github.com/chrislo1976/lua-exprtk",
   tag = "v0.1"
 }
 description = {
