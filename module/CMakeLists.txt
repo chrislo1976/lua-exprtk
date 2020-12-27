@@ -20,3 +20,8 @@ include_directories(
 
 add_library(${PROJECT_NAME} MODULE ${SRCS})
 target_link_libraries(${PROJECT_NAME} ${LUA_LIBRARIES} sol exprtk)
+set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
+
+if (CMAKE_INSTALL_PREFIX)
+    install(TARGETS ${PROJECT_NAME} DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
+endif(CMAKE_INSTALL_PREFIX)

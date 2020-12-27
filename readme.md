@@ -9,7 +9,7 @@ A lua wrapper for exprtk (C++ Mathematical Expression Parsing And Evaluation Lib
 local exprtk = require('lua-exprtk')
 
 local varMap = exprtk.variable_map.new()
-varMap:add('a')
+varMap:insert('a')
 
 local symbols = exprtk.symbol_table.new()
 symbols:add_constants()
