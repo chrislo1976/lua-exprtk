@@ -34,6 +34,12 @@ end
 
 For a full list of expressions, look [here](https://www.partow.net/programming/exprtk/index.html).
 
+## Remarks
+
+- lua-exprtk was compiled and tested with macOS 10.14, Windows 10 x64 and Ubuntu 20.04 x64.
+- Compilation takes some time, most probably because of the huge header-only libs sol2 and exprtk.
+- lua-exprtk is also available via LuaRocks.
+
 ## External dependencies (included)
 - [Sol3 (sol2 v3.0) - a C++ <-> Lua API wrapper with advanced features and top notch performance]( https://github.com/ThePhD/sol2 )
 - [exprtk - C++ Mathematical Expression Parsing And Evaluation Library](https://github.com/ArashPartow/exprtk)

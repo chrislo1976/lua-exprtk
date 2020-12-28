@@ -1,8 +1,9 @@
 
 package = "lua-exprtk"
-version = "scm-1"
+version = "0.2-1"
 source = {
-  url = "git://github.com/chrislo1976/lua-exprtk"
+  url = "git://github.com/chrislo1976/lua-exprtk",
+  tag = "v0.2"
 }
 description = {
     summary = "A lua wrapper for exprtk (C++ Mathematical Expression Parsing And Evaluation Library)",
