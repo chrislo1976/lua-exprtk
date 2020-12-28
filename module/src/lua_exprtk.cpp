@@ -93,8 +93,11 @@ sol::table open_module(sol::this_state L)
 
 } // namespace lua_module
 
-
+#if defined(_MSC_VER)
+extern "C" __declspec(dllexport) int luaopen_exprtk(lua_State* L)
+#else
 extern "C" int luaopen_exprtk(lua_State* L)
+#endif
 {
     return sol::stack::call_lua(L, 1, lua_module::open_module);
 }
